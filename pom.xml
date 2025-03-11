@@ -146,12 +146,6 @@
 						<configuration>
 							<target>
 								<mkdir dir="${project.basedir}/src/main/resources/db/migration"/>
-								<tstamp>
-									<format property="timestamp" pattern="yyyyMMddHHmmss"/>
-								</tstamp>
-								<property name="migrationName" value="${migrationName}"/>
-								<echo file="${project.basedir}/src/main/resources/db/migration/V${timestamp}__${migrationName}.sql"
-									  message="-- V${timestamp}__${migrationName}.sql generated in ${project.basedir}/src/main/resources/db/migration"/>
 							</target>
 						</configuration>
 					</execution>
